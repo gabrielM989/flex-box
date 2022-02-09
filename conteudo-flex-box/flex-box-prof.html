@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Professor</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            background: orange;
+        }
+
+        .flex-container {
+            display: flex; 
+            flex-wrap: wrap; /* faz com que fique quebrando linhas, para ficar ajustado */
+           /*  flex-direction: column */; /* com o column, fica um debaixo do outro */
+           /* flex-flow: column nowrap; */ /* É uma maneira reduzida de fazer */
+            justify-content: space-around; /* eixo x, horizontal */
+            align-content: space-around; /* eixo transversal */
+            height: 100vh; /* o "max" ou "min" - na frente, ajuda a delimitar a área selecionada */
+            flex-direction: row;
+
+        }
+
+        .flex-container .flex-item {
+            width: 200px;
+            height: 100px;
+            background: blue;
+            border: 2px solid white;
+        }
+        .primeiro{
+            order: -1; /* muda a ordem  das divs */
+        }
+        .segundo{
+            order: -2;
+        }
+        .grow{
+            flex-grow: 1; /* Está falando sobre o fator de aumento, fazendo pegar os espaços que sobram */
+        }
+        .shrink{
+            flex-shrink: 5; /* faz com que aumente ou diminua de forma proporcional, com o espaço que necessita */
+        }
+
+        .basis{
+            flex-basis: 1000px; /* aumenta a largura- vai de acordo com qual é o eixo principal */
+        }
+        .flex{
+            flex: 0 4 500px; /* flex-grow, flex-shrink e flex-basis, em sequência, de uma maneira mais simplificada */
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item grow ">2</div>
+        <div class="flex-item shrink">3</div>
+        <div class="flex-item basis">4</div>
+        <div class="flex-item flex">5</div>
+       <!--  <div class="flex-item">5</div>
+        <div class="flex-item segundo">6</div>
+        <div class="flex-item">7</div>
+        <div class="flex-item primeiro">8</div>
+        <div class="flex-item">9</div>
+        <div class="flex-item">10</div> -->
+    </div>
+
+</body>
+
+</html>

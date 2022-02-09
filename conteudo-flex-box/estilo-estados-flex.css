@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* conta a margem e a borda, não incluindo a margem, para calcular a altura */
+   
+}
+
+.main-container{
+   /*  display: flex; */
+    flex-direction: column;
+    min-height: 100vh ;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.item{
+    display: flex;
+    justify-content: space-evenly; /* manipula o eixo principal, o evenly deixa uniforme */
+    align-items: center;
+    /* border: 1px solid black; */
+    flex-grow: 1;/* altera a altura que os campos irão pegar na tela, de maneira proporcional, a maneira que precisar */
+}
+
+.item + .item { /* É um elemento item que é irmão de um elemento item  */
+    margin-top: 20px;
+
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    border: 3px solid green;
+    padding: 10px;
+    box-sizing: border-box; /* manter o mesmo tamanho  */
+}
+
+.r1{
+    border-radius: 50px 0 0 0;
+    padding: 15px;
+}
+.r2{
+    border-radius: 0 50px 0 0;
+}
+.r3{
+    border-radius: 0 0 0 50px;
+}
+.r4{
+    border-radius: 0 0 50px 0;
+}
+
+.card-img{
+    width: 140px;
+    height: 120px;
+    object-fit: cover; /* a imagem se ajeita "dentro" dela tirando  */
+    float: left; /* Faz a imagem flutuar, fazendo com que o texto fiquei inserido na div inteira */
+}
+
+.card-p{
+    margin: 0;
+    text-align: justify;
+    word-spacing: -4.5px;
+
+}

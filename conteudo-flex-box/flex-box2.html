@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box 2</title>
+
+    <style>
+        div{
+            margin-top: 20px;
+            margin-left: 30px;
+            width: 400px;
+            height: 150px;
+            border: 1px solid red;
+            /* display: inline-block; */  /* deixar um ao lado do outro */
+            background: orange;
+
+        }
+
+        body{ /* também pode ser uma section, etc */
+            
+            margin: 0px;
+            box-sizing: border-box;
+            height: 20vh;
+            width: 150vw;
+            background: lightcoral;
+            
+            display: flex; /* Deixa um ao lado do outro, não sendo necessário alterar, sempre feito no body */
+            align-items: center; /* manipula o eixo transversal */
+            /* stretch - é o valor padrão  */    
+            /* flex-start - é o valor padrão, como já vem */
+            /* flex-end - deixa no final, direita */
+            /* baseline - ordena os textos conforme o primeiro elemento, deixando todos aninhados */
+            
+            
+            justify-content: center; /* manipula o eixo principal, "EIXO X" */
+            /* space-between - deixa espaço entre as DIVs, de maneira proporcional */
+            /* space-around - tenta distribuir deixando um espaço igual, entre as bordas */
+            /* space-evenly - deixa os elementos um pouco mais separados da margem e deixa um espaço menor entre os elementos */
+            /* flex-start - é o valor padrão, como já vem */
+            /* flex-end - deixa no final, direita */
+
+            flex-wrap: nowrap; /* faz com que ajuste as Divs */
+            /* wrap-reverse - quebra as linhas, mas de forma contrária/reversa */
+            /* nowrap - é o valor padrão, os elementos ficarão na mesma linha */
+            /* wrap - faz com que quebre as linhas, conforme o tamanho da página */
+
+            flex-direction:row ; /* ordena os elementos */
+            /* row- deixa os elementos em linha */
+            /* row-reverse - deixa os elementos o contrário */
+            /* column - interte os eixos, deixa o X no Y e o Y no X */
+  
+        }
+
+           
+    </style>
+
+</head>
+<body> <!-- flex container, envolve todos os elementos -->
+
+   <div>1</div> 
+   <div>2</div>
+   <div>3</div>
+   <div>4</div>
+   <div>5</div>
+   <div>6</div>
+   <div>7</div>
+   <div>8</div>
+   <div>9</div>
+   <div>10</div>
+
+    
+    
+</body>
+</html>

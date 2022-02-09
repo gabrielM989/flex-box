@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exemplo Box 2</title>
+
+    <style>
+        .container{
+            height: 50vh;
+
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .filha{
+
+            display: flex;
+            border: 2px solid black;
+            justify-content: space-around;
+        }
+        .filha div {
+            width: 300px;
+            height: 150px;
+            background: orange;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="filha">
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="filha">
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="filha">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
